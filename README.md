@@ -22,3 +22,4 @@ the front-end is a React project, follow the following setup
   - Redux
   - React router
   - Styled components
+  - ~~Redux Saga~~
