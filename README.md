@@ -11,6 +11,7 @@ The Backend uses docker thus it will be simple,
 #### Backedn featured
   - MVC architecture
   - Swagger API documentation
+  - Docker
   
 ## Front-end
 the front-end is a React project, follow the following setup
