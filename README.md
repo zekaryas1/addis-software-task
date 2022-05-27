@@ -13,7 +13,7 @@ The Backend uses docker thus it will be simple,
   - Swagger API documentation
   - Docker
   
-## Front-end
+## Front-end [Deployed here](https://main--soft-dragon-e9df99.netlify.app/)
 the front-end is a React project, follow the following setup
   - <code>npm install & npm run start</code>
   - follow the page it opens in the browser, and you should see the following homepage.
