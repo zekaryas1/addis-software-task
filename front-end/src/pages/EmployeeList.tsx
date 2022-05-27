@@ -28,7 +28,7 @@ export default function EmployeeList() {
             fetch(`${API.URL}/employees/${employeeId}`, {
                 method: 'DELETE',
             }).then(value => {
-                const newEmployeeList = employee.filter(value => value._id != employeeId);
+                const newEmployeeList = employee.filter(value => value._id !== employeeId);
                 setEmployee(newEmployeeList);
             })
         }

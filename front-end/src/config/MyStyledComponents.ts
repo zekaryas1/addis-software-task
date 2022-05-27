@@ -40,7 +40,7 @@ export const SubContainerCard = styled(Card)`
 `;
 
 export const SubmitButton = styled.input`
-  ${props => props.type == 'submit' && `
+  ${props => props.type === 'submit' && `
     padding: 8px;
     background-color: transparent;
     color: white;
