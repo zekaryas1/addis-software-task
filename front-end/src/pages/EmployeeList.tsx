@@ -10,11 +10,15 @@ import {Button, Container, EmployeeCardAction, Img, MutedP, SubContainerCard} fr
 export default function EmployeeList() {
     const navigate = useNavigate();
     const [employee, setEmployee] = useState<Employee[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
     const dispatch = useDispatch();
 
     useEffect(() => {
         fetch(API.URL + "/employees").then(value => value.json()).then(value => {
             setEmployee(value);
+            setIsLoading(false);
+        }).catch(v=>{
+            setIsLoading(false);
         })
     }, []);
 
@@ -50,6 +54,7 @@ export default function EmployeeList() {
             </Button>
         </div>
         <Container>
+            { isLoading ? <MutedP size={2} center={true}>Loading Employees...</MutedP> : null }
             {employee.map(e => {
                 return <SubContainerCard center={false} key={e._id}>
                     <Img src={"https://avatars.dicebear.com/api/miniavs/" + e.name + ".svg"} alt=""/>
