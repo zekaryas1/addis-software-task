@@ -1,3 +1,3 @@
 export class API {
-    static URL: string = "http://localhost:5000";
+    static URL: string = "https://addis-software.onrender.com";
 }
