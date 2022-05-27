@@ -1,8 +1,8 @@
 # Addis-software-task
 
 ## How to test the project
-### Backend
-The Backedn uses docker thus it will be simple, 
+### Backend  [Deployed here](https://addis-software.onrender.com/)
+The Backend uses docker thus it will be simple, 
 - create .env file with a mongodb database connection string
 - <code>docker build . -t username/employee-back-end</code>
 - <code>docker run -p 8080:8080 -d username/employee-back-end</code>
@@ -11,6 +11,7 @@ The Backedn uses docker thus it will be simple,
 #### Backedn featured
   - MVC architecture
   - Swagger API documentation
+  - Docker
   
 ## Front-end
 the front-end is a React project, follow the following setup
